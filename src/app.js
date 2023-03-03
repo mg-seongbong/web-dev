@@ -4,7 +4,7 @@ import http from "http";
 import Debug from "debug";
 import express from "express";
 import dotenv from "dotenv";
-import { init } from "./loaders/index.mjs";
+import { init } from "./loaders/index.js";
 
 const app = express();
 const debug = Debug("main:index.js");

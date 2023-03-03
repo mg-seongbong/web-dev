@@ -5,7 +5,7 @@ import { errors } from "celebrate";
 import cookieParser from "cookie-parser";
 import compression from "compression";
 
-import router from "../routes/index.mjs";
+import router from "../routes/index.js";
 
 import Debug from "debug";
 const debug = Debug("main:express/express.js");

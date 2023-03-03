@@ -1,8 +1,8 @@
 "use strict";
 
 import express from "express";
-import { authController } from "../controllers/auth.mjs";
-import { checkAPI } from "../validators/index.mjs";
+import { authController } from "../controllers/auth.js";
+import { checkAPI } from "../validators/index.js";
 
 const router = express.Router();
 

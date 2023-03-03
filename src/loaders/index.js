@@ -1,9 +1,9 @@
 "use strict";
 
 import Debug from "debug";
-const debug = Debug("main:loader/index.mjs");
+const debug = Debug("main:loader/index.js");
 // import { connect } from "./database.js";
-import setExpress from "./express.mjs";
+import setExpress from "./express.js";
 
 export const init = async (app) => {
   //   await connect();

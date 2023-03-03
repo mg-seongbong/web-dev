@@ -3,13 +3,14 @@
   "version": "0.0.1",
   "description": "웹 어플리케이션 테스트 서버",
   "license": "ISC",
+  "type": "module",
   "author": {
     "name": "seongbongjang",
     "email": "jangsb7113@mustg.kr"
   },
   "scripts": {
     "dev": "DEBUG=main:* nodemon ./src/app.js",
-    "start": "node ./src/app.mjs"
+    "start": "node ./src/app.js"
   },
   "dependencies": {
     "celebrate": "^15.0.1",
