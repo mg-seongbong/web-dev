@@ -1,9 +1,22 @@
 {
+  "name": "web-dev",
+  "version": "0.0.1",
+  "description": "웹 어플리케이션 테스트 서버",
+  "license": "ISC",
+  "author": {
+    "name": "seongbongjang",
+    "email": "jangsb7113@mustg.kr"
+  },
+  "scripts": {
+    "dev": "DEBUG=main:* nodemon ./src/app.js",
+    "start": "node ./src/app.mjs"
+  },
   "dependencies": {
     "celebrate": "^15.0.1",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "debug": "^4.3.4",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-validator": "^6.15.0",
     "http-errors": "^2.0.0",
