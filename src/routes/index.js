@@ -9,11 +9,6 @@ export default () => {
   try {
     const app = Router();
 
-    app.get("/", (req, res, next) => {
-      debug("==> default api");
-      res.sendStatus(200);
-    });
-
     auth(app);
 
     return app;

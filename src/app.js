@@ -41,6 +41,7 @@ async function startServer() {
     const bind =
       typeof address === "string" ? `pipe ${address}` : `port ${address.port}`;
     debug(` server started... on ${bind}`);
+    console.log(` server started... on ${bind}`);
   });
 
   server.listen(port);
