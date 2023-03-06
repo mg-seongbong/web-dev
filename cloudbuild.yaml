@@ -2,14 +2,5 @@ steps:
   - name: node
     entrypoint: npm
     args: ["install"]
-  - name: node
-    entrypoint: npm
-    args: ["run", "build"]
-  - name: "gcr.io/cloud-builders/docker"
-    args:
-      - "build"
-      - "-t"
-      - "gcr.io/web-dev-test-379414/web-dev-server:0.0.1"
-      - "."
-images:
-  - "gcr.io/web-dev-test-379414/web-dev-server:0.0.1"
+  - name: "gcr.io/cloud-builders/gcloud"
+    args: ["app", "deploy"]
