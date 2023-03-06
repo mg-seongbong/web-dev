@@ -33,6 +33,7 @@ async function startServer() {
   server.on("error", (err) => {
     if (err.syscall !== "listen") throw err;
     debug(err.message);
+    console.error(err.message);
     process.exit(1);
   });
 
