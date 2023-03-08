@@ -28,7 +28,9 @@
   "devDependencies": {
     "husky": "^8.0.3"
   },
-  "hooks": {
-    "pre-commit": "echo '???????'"
+  "husky": {
+    "hooks": {
+      "pre-push": "echo '???????'"
+    }
   }
 }
