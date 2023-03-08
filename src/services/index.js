@@ -5,3 +5,7 @@ export const throwError = (msg, status = 500) => {
   error.status = status;
   throw error;
 };
+
+export const sum = (a, b) => {
+  return a + b;
+};
