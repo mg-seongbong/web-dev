@@ -1,18 +1,18 @@
-"use strict";
+"use strict"
 
-import Debug from "debug";
-const debug = Debug("main:routes/index.js");
-import { Router } from "express";
-import auth from "./auth.js";
+import Debug from "debug"
+const debug = Debug("main:routes/index.js")
+import { Router } from "express"
+import auth from "./auth.js"
 
 export default () => {
   try {
-    const app = Router();
+    const app = Router()
 
-    auth(app);
+    auth(app)
 
-    return app;
+    return app
   } catch (err) {
-    console.error(err);
+    console.error(err)
   }
-};
+}

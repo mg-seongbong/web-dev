@@ -1,15 +1,15 @@
-"use strict";
+"use strict"
 
-import express from "express";
-import { authController } from "../controllers/auth.js";
-import { checkAPI } from "../validators/index.js";
+import express from "express"
+import { authController } from "../controllers/auth.js"
+import { checkAPI } from "../validators/index.js"
 
-const router = express.Router();
+const router = express.Router()
 
 export default (app) => {
-  app.use("/auth", router);
+  app.use("/auth", router)
 
-  router.post("/", checkAPI, authController);
+  router.post("/", checkAPI, authController)
 
-  return router;
-};
+  return router
+}
